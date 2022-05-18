@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #5f57b0;
+}
+
+.info {
+    display: flex;
+    background-color: #3d3c72;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+.info input {
+    flex-basis: 33%;
+    height: 30px;
+    margin: auto 30px;
+}
+
+.info input[type=file] {
+    display: none;
+}
+
+.info img {
+    width: 250px;
+    border-radius: 200px;
+    border: 2px solid red;
+    margin-left: 50px;
+}
+

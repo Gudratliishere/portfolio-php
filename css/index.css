@@ -1,0 +1,21 @@
+.lang {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.lang img {
+    width: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: #ff464d;
+}
