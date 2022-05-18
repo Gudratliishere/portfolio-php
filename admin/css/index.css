@@ -4,11 +4,12 @@ body {
     background-color: #5f57b0;
 }
 
-.info {
+.info, .skills {
     display: flex;
     background-color: #3d3c72;
     padding: 20px 0;
     border-radius: 20px;
+    margin-bottom: 30px;
 }
 
 .info input {
@@ -28,3 +29,44 @@ body {
     margin-left: 50px;
 }
 
+.skills td {
+    border: 1px solid #b8b8d1;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.col-1 {
+    width: 50%;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+.col-3 {
+    width: 15%;
+}
+
+.skills {
+    flex-direction: column;
+}
+
+.add-skill {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.skills img{
+    width: 30px;
+}

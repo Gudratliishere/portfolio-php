@@ -2,7 +2,11 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/about.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/admin/delete_skill.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/admin/do_login.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/admin/do_skill_edit.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/admin/index.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/admin/update_skill.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/index.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/work.php" dialect="MySQL" />
   </component>
