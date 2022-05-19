@@ -10,11 +10,8 @@ while ($row = $result->fetch_assoc())
 
 <div class="works-section" id="work" id="work">
     <div class="works-header">
-        <h3>works</h3>
-        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
-            nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor
-            a ornare odio. </p>
+        <h3><?=$lang['work']?></h3>
+        <p><?=$lang['work-text']?></p>
     </div>
     <div class="portfolio-section-bottom-row" id="portfolio">
         <div class="container">

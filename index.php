@@ -2,10 +2,10 @@
 <?php
 $lang = !empty($_GET['lang']) ? trim($_GET['lang']) : "en";
 
-if (isset($_COOKIE['lang']))
-    $lang = $_COOKIE['lang'];
-else
+if (!empty($_GET['lang']))
     setcookie('lang', $lang, time() + 86400 * 30, "/");
+else if (isset($_COOKIE['lang']))
+    $lang = $_COOKIE['lang'];
 
 include "lang/$lang.php";
 include 'db.php';
@@ -19,7 +19,7 @@ $surname = $row['surname'];
 
 <html>
 <head>
-    <title>Above Free Responsive Template | Template Stock</title>
+    <title><?=$name?> <?=$surname?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content="Onepage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -68,27 +68,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <article style="position: absolute; width: 100%; opacity: 0;">
                         <div class="banner-wrap">
                             <div class="banner_center">
-                                <h1>hello world,</h1>
-                                <h2>i am <span>java developer</span></h2>
-                                <h2>from Baku</h2>
+                                <h1><?= $lang['first-banner-first'] ?>,</h1>
+                                <h2><?= $lang['first-banner-second'] ?> <span><?= $lang['first-banner-third'] ?></span></h2>
+                                <h2><?= $lang['first-banner-fourth'] ?></h2>
                             </div>
                         </div>
                     </article>
                     <article style="position: absolute; width: 100%; opacity: 0;">
                         <div class="banner-wrap">
                             <div class="banner_center">
-                                <h1>hello world,</h1>
-                                <h2>i love <span>learning everything</span></h2>
-                                <h2>improving</h2>
+                                <h1><?= $lang['second-banner-first'] ?>,</h1>
+                                <h2><?= $lang['second-banner-second'] ?> <span><?= $lang['second-banner-third'] ?></span></h2>
+                                <h2><?= $lang['second-banner-fourth'] ?></h2>
                             </div>
                         </div>
                     </article>
                     <article style="position: absolute; width: 100%; opacity: 0;">
                         <div class="banner-wrap">
                             <div class="banner_center">
-                                <h1>also,</h1>
-                                <h2><span>hip-hop music</span> is my life-style</h2>
-                                <h2>definitely</h2>
+                                <h1><?= $lang['third-banner-first'] ?>,</h1>
+                                <h2><span><?= $lang['third-banner-third'] ?></span> <?= $lang['third-banner-second'] ?></h2>
+                                <h2><?= $lang['third-banner-fourth'] ?></h2>
                             </div>
                         </div>
                     </article>

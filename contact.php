@@ -1,11 +1,8 @@
 <div class="footer-section" id="contact" id="contact">
     <div class="container">
         <div class="contact-header">
-            <h3> contact</h3>
-            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
-                sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
-                sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a
-                odio tincidunt auctor a ornare odio. </p>
+            <h3><?=$lang['contact']?></h3>
+            <p><?=$lang['contact-text']?></p>
         </div>
         <div class="social-icon">
             <a href="#"><i class="icon1"></i></a>
@@ -18,32 +15,28 @@
             <a href="#"><i class="icon8"></i></a>
         </div>
         <div class="contact">
-            <form>
+            <form method="post" action="add_message.php">
                 <div class="col-md-4 contactgrid">
-                    <input type="text" class="text" value=" name" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = ' name';}">
+                    <input type="text" name="name" required class="text" placeholder="<?=$lang['name']?>">
                 </div>
                 <div class="col-md-4 contactgrid">
-                    <input type="text" class="text" value="email" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'email';}">
+                    <input type="text"  name="email" required class="text" placeholder="<?=$lang['email']?>">
                 </div>
                 <div class="col-md-4 contactgrid">
-                    <input type="text" class="text" value="phone" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'phone';}">
+                    <input type="text" name="phone" required  class="text" placeholder="<?=$lang['phone']?>">
                 </div>
                 <div class="col-md-8 contactgrid1">
-                    <textarea onfocus="if(this.value == 'Your Message') this.value='';"
-                              onblur="if(this.value == '') this.value='Your Message';">Your Message</textarea>
+                    <textarea  name="message" required placeholder="<?=$lang['message']?>"></textarea>
                 </div>
                 <div class="col-md-4 contactgrid2">
-                    <input type="submit" value="[send message]">
+                    <input type="submit" value="[<?=$lang['send-message']?>]">
                 </div>
                 <div class="clearfix"></div>
             </form>
         </div>
         <div class="footer-bottom">
 
-            <p>&copy; <?=date('Y')?> Onepage . All rights Reserved | Dunay Gudratli</p>
+            <p>&copy; <?=date('Y')?> <?=$lang['copyright']?> | <?=$name?> <?=$surname?></p>
 
         </div>
         <script type="text/javascript">

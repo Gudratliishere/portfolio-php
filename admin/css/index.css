@@ -4,7 +4,7 @@ body {
     background-color: #5f57b0;
 }
 
-.info, .skills {
+.info, .skills, .gallery, .messages {
     display: flex;
     background-color: #3d3c72;
     padding: 20px 0;
@@ -13,14 +13,29 @@ body {
 }
 
 .info input {
-    flex-basis: 33%;
+    flex-basis: 25%;
     height: 30px;
     margin: auto 30px;
+    outline: none;
 }
 
 .info input[type=file] {
     display: none;
 }
+
+.info input[type=submit] {
+    flex-basis: 15%;
+    width: 70px;
+    border-radius: 15px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type=submit]:hover{
+    background-color: #201ea8;
+    color: white;
+}
+
 
 .info img {
     width: 250px;
@@ -69,4 +84,66 @@ a {
 
 .skills img{
     width: 30px;
+}
+
+.gallery table {
+    text-align: center;
+}
+
+.gallery img {
+    width: 50px;
+    border-radius: 15px;
+}
+
+.gallery {
+    flex-direction: column;
+}
+
+.add-image {
+    margin-right: 25px;
+    margin-left: auto;
+}
+
+#gallery-image {
+    display: none;
+}
+
+a img {
+    width: 30px;
+}
+
+table {
+    text-align: center;
+}
+
+td {
+    color: white;
+}
+
+.col-name {
+    width: 10%;
+}
+
+.col-email {
+    width: 15%;
+}
+
+.col-phone {
+    width: 10%;
+}
+
+.col-message {
+    width: 50%;
+}
+
+.col-date {
+    width: 10%;
+}
+
+.col-delete {
+    width: 5%;
+}
+
+.messages td {
+    border: 1px solid #4B6075;
 }
